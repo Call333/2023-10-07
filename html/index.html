@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Calebe Almeida Melo - 1° Período de BSI - INTW 07/10/2023-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;900&family=Victor+Mono:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="principal">
+        <div class="cabecalho">
+            <img src="./../img/copy_of_IFALvertical.png " width="100px">
+            <h1>Inscrição no Estágio</h1>
+        </div>
+        <div class="corpo">
+            <div class="formulario">
+                <form>
+                    <div class="textInputs">
+                        <label for="nomeCompleto" class="nomeCompleto">Nome Completo:</label><br>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="nome completo"
+                            class="campoFormText"><br>
+                    </div>
+                    
+                    <div class="textInputs">
+                        <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="email" class="campoFormText"><br>
+                    </div>
+                    
+                    <div class="textInputs">
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="text" id="telefone" name="telefone" placeholder="82977776666"
+                            class="campoFormText"><br>
+                    </div>
+
+                    <div class="textInputs">
+                        <label for="areaDeInteresse">Área de Interesse:</label><br>
+                        <select id="areaDeInteress" name="areaDeInteresse" class="campoFormText">
+                            <option value="desenvolvedor Front-end">Desenvolvedor Front-end</option>
+                            <option value="desenvolvedor Mobile Java">Desenvolvedor Mobile Java</option>
+                            <option value="desenvolvedor Mobile React Native">Desenvolvedor Mobile React Native</option>
+                            <option value="desenvolvedor Back-end python">Desenvolvedor Back-end Pyhton</option>
+                        </select><br>
+                    </div>
+
+                    <div class="textInputs">
+                        <label for="sexo">Sexo:</label><br>
+                        <input type="radio" name="Masculino" id="masculino" value="Masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="Feminino" id="feminino" value="Feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="Outros" id="outros" value="outros">
+                        <label for="outros">Outros</label><br>
+                    </div>
+
+                    <div class="textInputs">
+                        <label for="Skills">Skills:</label><br>
+                        <input type="checkbox" id="html" name="css" value="html">
+                        <label for="html">HTML</label><br>
+                        <input type="checkbox" id="css" name="css" value="css">
+                        <label for="css">CSS</label><br>
+                        <input type="checkbox" id="javaScript" name="javaScript" value="javaScript">
+                        <label for="javaScript">JavaScript</label><br>
+                        <input type="checkbox" id="bootstrap" name="bootstrap" value="bootstrap">
+                        <label for="bootstrap">Bootstrap</label><br>
+                    </div>
+
+                    <div class="textInputs">
+                        <label for="comentarios">Comentários: </label><br>
+                        <textarea id="comentarios" rows="7" cols="50">
+
+                    </textarea>
+                    </div>
+
+                    <input type="submit" id="enviar" value="Enviar" class="enviar">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
